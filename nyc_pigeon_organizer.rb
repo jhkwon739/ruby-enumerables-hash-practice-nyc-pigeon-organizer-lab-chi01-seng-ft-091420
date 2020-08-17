@@ -4,10 +4,9 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
   pigeon_attributes, attributes_data = data.keys, data.values
+  #gets all the unique names 
   names = get_names(attributes_data).flatten.uniq
   pigeon_list = organize_data(data, names, pigeon_attributes)
- # binding.pry
-  
 end
 
 #return an array of all the names grabbed from pigeon data

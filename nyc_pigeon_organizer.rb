@@ -23,7 +23,7 @@ def condense_data(data, names, pigeon_attributes)
       data[attribute].map do |specific_attribute, value|
         if value.include?(name)
           #new_hash[name] = { attribute => [specific_attribute]}
-          new_hash[name][attribute] << specific_attribute
+          new_hash[name][attribute] << specific_attribute.to_s
         end
       end
     end

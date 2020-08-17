@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
   pigeon_attributes, attributes_data = data.keys, data.values
   names = get_names(attributes_data).flatten.uniq
   pigeon_list = condense_data(data, names, pigeon_attributes)
-  binding.pry
+ # binding.pry
   
 end
 
